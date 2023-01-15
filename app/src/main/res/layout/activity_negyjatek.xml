@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".negyjatek">
+
+    <Button
+        android:id="@+id/negyallas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pontok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/negyoszto" />
+
+    <Button
+        android:id="@+id/negyjateknext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Következő kör"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/negyjatekp4" />
+
+    <EditText
+        android:id="@+id/negyjatekp1"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/negyoszto" />
+
+    <EditText
+        android:id="@+id/negyjatekp2"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/negyjatekp1" />
+
+    <EditText
+        android:id="@+id/negyjatekp3"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/negyjatekp2" />
+
+    <EditText
+        android:id="@+id/negyjatekp4"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/negyjatekp3" />
+
+    <TextView
+        android:id="@+id/negyoszto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/negykor" />
+
+    <TextView
+        android:id="@+id/negykor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/negydupla"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:text="Dupla kör"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/negyszepko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Szépkő"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/negyjatekp1"
+        app:layout_constraintStart_toEndOf="@+id/negyjatekp1" />
+
+    <Switch
+        android:id="@+id/negyp1s"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/negyjatekp1"
+        app:layout_constraintStart_toEndOf="@+id/negyjatekp1"
+        app:layout_constraintTop_toTopOf="@+id/negyjatekp1" />
+
+    <Switch
+        android:id="@+id/negyp2s"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/negyjatekp2"
+        app:layout_constraintStart_toEndOf="@+id/negyjatekp2"
+        app:layout_constraintTop_toTopOf="@+id/negyjatekp2" />
+
+    <Switch
+        android:id="@+id/negyp3s"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/negyjatekp3"
+        app:layout_constraintStart_toEndOf="@+id/negyjatekp3"
+        app:layout_constraintTop_toTopOf="@+id/negyjatekp3" />
+
+    <Switch
+        android:id="@+id/negyp4s"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/negyjatekp4"
+        app:layout_constraintStart_toEndOf="@+id/negyjatekp4"
+        app:layout_constraintTop_toTopOf="@+id/negyjatekp4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

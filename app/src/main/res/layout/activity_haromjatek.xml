@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".haromjatek">
+
+    <TextView
+        android:id="@+id/haromkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/haromjatekp1"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haromkor" />
+
+    <EditText
+        android:id="@+id/haromjatekp3"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haromjatekp2" />
+
+    <EditText
+        android:id="@+id/haromjatekp2"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haromjatekp1" />
+
+    <Button
+        android:id="@+id/haromjateknext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Következő kör"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haromjatekp3" />
+
+    <Button
+        android:id="@+id/haromallas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pontok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haromoszto" />
+
+    <TextView
+        android:id="@+id/haromoszto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haromkor" />
+
+    <Switch
+        android:id="@+id/haromjateksz1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/haromjatekp1"
+        app:layout_constraintStart_toEndOf="@+id/haromjatekp1"
+        app:layout_constraintTop_toTopOf="@+id/haromjatekp1" />
+
+    <Switch
+        android:id="@+id/haromjateksz2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/haromjatekp2"
+        app:layout_constraintStart_toEndOf="@+id/haromjatekp2"
+        app:layout_constraintTop_toTopOf="@+id/haromjatekp2" />
+
+    <Switch
+        android:id="@+id/haromjateksz3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/haromjatekp3"
+        app:layout_constraintStart_toEndOf="@+id/haromjatekp3"
+        app:layout_constraintTop_toTopOf="@+id/haromjatekp3" />
+
+    <TextView
+        android:id="@+id/haromszepko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Szépkő"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/haromjatekp1"
+        app:layout_constraintStart_toEndOf="@+id/haromjatekp1" />
+
+    <Switch
+        android:id="@+id/haromdupla"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:text="Dupla kör"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
